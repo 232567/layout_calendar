@@ -1,0 +1,23 @@
+.calendar__day {
+  width: $cell-size;
+  height: $cell-size;
+  background: $grey;
+  border: $border solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font;
+  font-size: $font-size;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &::before {
+    counter-increment: day;
+    content: counter(day);
+  }
+
+  &:hover {
+    background: $pink;
+    transform: translateY(-20px);
+  }
+}
