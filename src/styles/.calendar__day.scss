@@ -1,23 +1,18 @@
 .calendar__day {
-  width: $cell-size;
-  height: $cell-size;
-  background: $grey;
-  border: $border solid black;
+  width: $day-size;
+  height: $day-size;
+  border: $day-border solid black;
+  background-color: $day-bg;
+  position: relative;
+  font-family: Arial, sans-serif;
+  transition: $transition;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $font;
-  font-size: $font-size;
-  cursor: pointer;
-  transition: 0.5s;
-
-  &::before {
-    counter-increment: day;
-    content: counter(day);
-  }
 
   &:hover {
-    background: $pink;
-    transform: translateY(-20px);
+    cursor: pointer;
+    background-color: $hover-bg;
+    transform: translateY($hover-move);
   }
 }

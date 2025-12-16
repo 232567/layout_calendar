@@ -1,18 +1,8 @@
-$gap: 5px;
-$cell-size: 40px;
-$grey: #eee;
-$pink: #f8a;
-$border: 1px;
-$font: Arial, sans-serif;
-$font-size: 14px;
-
-// mapa de dias para offsets
-$days: (
-  sun: 0,
-  mon: 1,
-  tue: 2,
-  wed: 3,
-  thu: 4,
-  fri: 5,
-  sat: 6,
-);
+$day-size: 100px;
+$day-border: 1px;
+$gap: 1px;
+$padding: 10px;
+$day-bg: #eee;
+$hover-bg: #ffbfcb;
+$hover-move: -20px;
+$transition: 0.5s;
