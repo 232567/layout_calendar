@@ -1,12 +1,6 @@
-@import 'variables';
-@import 'calendar';
-@import 'ADD numbers';
-@import 'Month-length modifuers';
-@import 'Start-day modifiers';
-
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
